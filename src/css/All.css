@@ -1,0 +1,175 @@
+h1
+{
+    
+   text-align: center;
+    top: 50px;
+    color: red;
+    background-color: darkred;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .whatsapp {
+    background: #1aeb60;
+    color: white;
+  }
+  .instagram
+  {
+    background: #d83845be;
+    color: white;
+  }
+  
+
+  .float-button {
+    text-decoration: none;
+    position: fixed;
+    padding: 8px;
+    padding-right: 15px;
+    bottom: 30px;
+    right: 35px;
+    background-color: #50c65e;
+    color: #FFF;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 4px 6px 0px rgba(173, 173, 173, 1);
+    z-index: 100;
+    font-family: arial;
+    font-size: 18px;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+.float-button:hover {
+    background-color: #90d573;
+}
+
+.fa-whatsapp {
+    font-size: 20px !important;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@keyframes whatsapp-animation {
+    from {opacity: 0%;}
+    to {opacity: 100%}
+}
+
+@media screen and (max-width: 545px) {
+    span {
+        display: none;
+    }
+    .float-button {
+        width: 35px;
+        border-radius: 10px;
+        height: 38px;
+    }
+    .fa-whatsapp {
+        font-size: 40px !important;
+    }
+}
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.box {
+  transition: box-shadow .0s;
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  text-align: justify;
+}
+.box:hover {
+  box-shadow: 0 0 11px darkred; 
+}
+.box1
+{
+  border: 2px solid darkred;
+}
+.box2
+{
+  display: block;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  background: darkred;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0.1s;
+}
+.box2:hover
+{
+  box-shadow: 0 0 11px rgb(12, 12, 12); 
+}
+.box3
+{
+  color: gray;
+}

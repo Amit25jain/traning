@@ -1,0 +1,134 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+.App-logo
+{
+  margin-right: 20px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.mobile {
+  color: #61dafb;
+}
+
+@keyframes mobile {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(180deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mobile {
+    animation: mobile infinite 5s linear;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.home,
+.reports,
+.products,
+.team,
+.reports {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.h
+{
+  margin-left: 10px;
+  color: white;
+
+}
+.r
+{
+margin-right: 10px;
+font-weight: bold;
+
+
+}
+.r:hover
+{
+background-color: darkred;
+color: darkred;
+
+}
+
+.active {
+  background-color: darkred;
+  color: white;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  margin-left: -15px;
+  
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .active {
+   text-align: center;
+   padding: 5px;
+  }
+}
+
+
+
+
+
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top:0;
+  /*left:-100%;*/
+  left:-10rem; /* 10rem is the min-width of dropdown-menu */
+  margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+} 
+
