@@ -1,14 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, 
-  MDBNavbarToggler, MDBCollapse, MDBFormInline,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
-  } from "mdbreact";
-  
+  MDBNavbarToggler, MDBCollapse} from "mdbreact";
+import {Link} from 'react-router-dom';
 import './css/App.css';
 import Sidebar from './Sidebar';
 import Logo from './images/favicon.ico'
@@ -16,17 +11,11 @@ import * as FaIcons from 'react-icons/fa';
 
 class Header extends React.Component
 {
-  state = {
-    isOpen: false
-  };
   
-  toggleCollapse = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
 
   render()
   {
-    const { isOpen } = this.state;
+   
     return(
       <>
      
@@ -35,9 +24,9 @@ class Header extends React.Component
         <MDBNavbarBrand className="white-text">
           <Sidebar /> 
         </MDBNavbarBrand>
-        <img src={Logo} className="App-logo"/>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        <img src={Logo} alt="description of image" aria-hidden="true" className="App-logo"/>
+        <MDBNavbarToggler />
+        <MDBCollapse id="navbarCollapse3" navbar>
         <MDBNavbarNav  left className="text-light font-weight-bold font-italic text-uppercase">
            
             Smart Traning Course
@@ -70,16 +59,16 @@ class Header extends React.Component
   <Link className="dropdown-item  text-decoration-none font-weight-bold ">
   <ul className="navbar-nav ">
   <li className="nav-item dropdown ">
-        <a className="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <Link className="nav-link dropdown-toggle" to="http://localhost:3000" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Traning Subject
-        </a>
+        </Link>
         <ul className="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
        
-          <li className="dropdown-submenu"><a className="dropdown-item dropdown-toggle" href="#"> Subject</a>
+          <li className="dropdown-submenu"> Subject
             <ul className="dropdown-menu">
               <li><Link className="dropdown-item" to="/html">HTML</Link></li>
               <li><Link className="dropdown-item" to="/css">CSS</Link></li>
-                <li><Link className="dropdown-item" to="/bootstrap">BOOTSTRAP</Link></li>
+              <li><Link className="dropdown-item" to="/bootstrap">BOOTSTRAP</Link></li>
               <li><Link className="dropdown-item" to="/javascript">JAVASCRIPT</Link></li>
               <li><Link className="dropdown-item" to="/jquery">JQUERY</Link></li>
               <li><Link className="dropdown-item" to="/php">PHP</Link></li>
@@ -116,10 +105,10 @@ class Header extends React.Component
 
      <div className="container bg-white" >
    
-<marquee   behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">
-  <h6 className="font-weight-bold font-italic "><b> (<FaIcons.FaMobileAlt className="mobile"/> 7418529635) </b>Smart Traning Course yes It will Course Online and Offline Lecture On user Depend not force Please New welcome to smart traning Course Join it
-   <b> ( <FaIcons.FaMobileAlt className="mobile"/> 7894561235) </b> </h6>
-  </marquee>
+     <marquee onMouseover="stop()" onMouseout="start()"><h6 className="font-weight-bold font-italic "><b> (<FaIcons.FaMobileAlt className="mobile"/> 7418529635) </b>Smart Traning Course yes It will Course Online and Offline Lecture On user Depend not force Please New welcome to smart traning Course Join it
+   <b> ( <FaIcons.FaMobileAlt className="mobile"/> 7894561235) </b> </h6></marquee>
+
+  
 
      </div>
 

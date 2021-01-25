@@ -5,14 +5,14 @@ import * as FaIcons from 'react-icons/fa';
 
 
 class Useraccount extends React.Component {
-    render() {
+    render(props) {
         return(
             <>
-             <img src={img} style={{ height: '250px', width: '100%' }} />
+             <img src={img} alt="text" aria-hidden="true" style={{ height: '250px', width: '100%' }} />
              <div className="container register">
                 <div className="row">
                     <div className="col-md-3 register-left">
-                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <img src="image.ibb.co/n7oTvU/logo_white.png" aria-hidden="true" alt="description of image"/>
                         <h3>Welcome</h3>
                         <p>Create From Smart Traning Course</p>
                        

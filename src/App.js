@@ -23,7 +23,6 @@ import Jquery from './pages/subject/Jquery';
 import Php from './pages/subject/Php';
 import Reactss from './pages/subject/Reactss';
 import Dotnet from './pages/subject/Dotnet';
-import Sidebar from './Sidebar';
 import Team from './pages/Team';
 import Address from './pages/Address';
 import './css/All.css';

@@ -58,7 +58,7 @@ const Sidebar = () => {
       
           <SidebarWrap>
             <NavIcon to='#'>
-            <img src={Logo} className="App-logo"/>
+            <img src={Logo} alt="description of image" aria-hidden="true" className="App-logo"/>
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             

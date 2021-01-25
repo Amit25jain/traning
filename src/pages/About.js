@@ -9,7 +9,7 @@ class About extends React.Component
         return(
             <>
           
-           <img src={img} style={{ height: '250px', width: '100%' }}/>
+           <img src={img} alt="description of image" aria-hidden="true" style={{ height: '250px', width: '100%' }}/>
             <h1>About Page</h1>
             </>
         )

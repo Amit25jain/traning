@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import './css/All.css';
-import Carddata from './Carddata';
+
 function Cards(props) {
     return (
         <>
