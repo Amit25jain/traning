@@ -105,8 +105,8 @@ class Header extends React.Component
 
      <div className="container bg-white" >
    
-     <marquee onMouseover="stop()" onMouseout="start()"><h6 className="font-weight-bold font-italic "><b> (<FaIcons.FaMobileAlt className="mobile"/> 7418529635) </b>Smart Traning Course yes It will Course Online and Offline Lecture On user Depend not force Please New welcome to smart traning Course Join it
-   <b> ( <FaIcons.FaMobileAlt className="mobile"/> 7894561235) </b> </h6></marquee>
+     <h6 className="font-weight-bold font-italic "><b> (<FaIcons.FaMobileAlt className="mobile"/> 7418529635) </b>Smart Traning Course yes It will Course Online and Offline Lecture On user Depend not force Please New welcome to smart traning Course Join it
+   <b> ( <FaIcons.FaMobileAlt className="mobile"/> 7894561235) </b> </h6>
 
   
 
